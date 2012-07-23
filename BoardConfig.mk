@@ -29,22 +29,22 @@ USE_CAMERA_STUB := true
 -include device/htc/msm7x30-common/BoardConfigCommon.mk
 
 # inherit from the proprietary version
--include vendor/htc/primou/BoardConfigVendor.mk
+-include vendor/htc/primoc/BoardConfigVendor.mk
 
-TARGET_BOOTLOADER_BOARD_NAME := primou
+TARGET_BOOTLOADER_BOARD_NAME := primoc
 
 BOARD_KERNEL_CMDLINE := no_console_suspend=1
-BOARD_KERNEL_RECOVERY_CMDLINE := $(BOARD_KERNEL_CMDLINE) console=ttyHSL0,115200,n8 androidboot.hardware=primou msmsdcc_power_gpio=88
+BOARD_KERNEL_RECOVERY_CMDLINE := $(BOARD_KERNEL_CMDLINE) console=ttyHSL0,115200,n8 androidboot.hardware=primoc msmsdcc_power_gpio=88
 BOARD_KERNEL_BASE := 0x13F00000
 BOARD_KERNEL_PAGE_SIZE := 4096
 
-BOARD_VENDOR_QCOM_GPS_LOC_API_HARDWARE := primou
+BOARD_VENDOR_QCOM_GPS_LOC_API_HARDWARE := primoc
 BOARD_VENDOR_QCOM_GPS_LOC_API_AMSS_VERSION := 50000
 
 BOARD_HAVE_HTC_FFC := true
 BOARD_USE_REVERSE_FFC := true
 
-# Workaround for primou's broken overlay scaling
+# Workaround for primoc's broken overlay scaling
 #BOARD_OVERLAY_MINIFICATION_LIMIT := 2
 
 # cat /proc/emmc
@@ -82,8 +82,8 @@ WIFI_BAND             := 802_11_ABG
 TARGET_RELEASETOOLS_EXTENSIONS := device/htc/common
 
 TARGET_KERNEL_SOURCE := kernel/htc/msm7x30
-TARGET_KERNEL_CONFIG := cyanogen_primou_defconfig
-TARGET_PREBUILT_KERNEL := device/htc/primou/prebuilt/kernel
+TARGET_KERNEL_CONFIG := cyanogen_primoc_defconfig
+TARGET_PREBUILT_KERNEL := device/htc/primoc/prebuilt/kernel
 TARGET_USES_OVERLAY := false
 
 BOARD_HAS_LARGE_FILESYSTEM := true
