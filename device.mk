@@ -26,8 +26,8 @@ PRODUCT_COPY_FILES += \
     device/htc/primoc/init.primoc.rc:root/init.primoc.rc \
     device/htc/primoc/ueventd.primoc.rc:root/ueventd.primoc.rc
 
-#PRODUCT_COPY_FILES += \
-#    frameworks/native/base/data/etc/android.hardware.telephony.cdma.xml:system/etc/permissions/android.hardware.telephony.cdma.xml
+PRODUCT_COPY_FILES += \
+    frameworks/base/data/etc/android.hardware.telephony.cdma.xml:system/etc/permissions/android.hardware.telephony.cdma.xml
 
 ## (2) Also get non-open-source GSM-specific aspects if available
 $(call inherit-product-if-exists, vendor/htc/primoc/primoc-vendor.mk)
