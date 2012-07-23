@@ -163,7 +163,7 @@ PRODUCT_COPY_FILES += \
 	device/htc/primoc/lib/libOpenVG.so:/system/lib/libOpenVG.so \
 	device/htc/primoc/lib/libposteffect.so:/system/lib/libposteffect.so \
 	device/htc/primoc/lib/libsc-a2xx.so:/system/lib/libsc-a2xx.so \
-	device/htc/primoc/lib/libdsi-netctrl.so:/system/lib/libdsi-netctrl.so \
+	device/htc/primoc/lib/libdsi_netctrl.so:/system/lib/libdsi_netctrl.so \
     device/htc/primoc/lib/libqmi.so:/system/lib/libqmi.so \
     device/htc/primoc/lib/libdll.so:/system/lib/libdll.so \
     device/htc/primoc/lib/libdiag.so:/system/lib/libdiag.so \
