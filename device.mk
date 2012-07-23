@@ -52,6 +52,10 @@ PRODUCT_PACKAGES += \
     gps.primoc \
     lights.primoc \
     sensors.primoc
+	
+PRODUCT_PACKAGES += \
+    audio_policy.msm7x30 \
+    audio.primary.msm7x30
 
 # idc files
 PRODUCT_COPY_FILES += \
@@ -124,6 +128,7 @@ PRODUCT_COPY_FILES += \
 	device/htc/primoc/lib/hw/audio_policy.default.so:system/lib/hw/audio_policy.default.so \
 	device/htc/primoc/lib/hw/audio_policy.msm7x30.so:system/lib/hw/audio_policy.msm7x30.so \
 	device/htc/primoc/lib/libaudioalsa.so:/system/lib/libaudioalsa.so \
+    device/htc/primoc/lib/libhtc_acoustic.so:/system/lib/libhtc_acoustic.so \
 	device/htc/primoc/lib/libaudioflinger.so:/system/lib/libaudioflinger.so
 
 # Prebuilt libraries that are needed to build open-source libraries
