@@ -236,4 +236,9 @@ $(call inherit-product, device/htc/primoc/media_htcaudio.mk)
 
 $(call inherit-product, frameworks/base/build/phone-hdpi-512-dalvik-heap.mk)
 
-$(call inherit-product-if-exists, vendor/htc/primoc/primoc-vendor.mk)
+
+# Goo updater app
+PRODUCT_PROPERTY_OVERRIDES += \
+ro.goo.developerid=jmz \
+ro.goo.rom=cm9primoc \
+ro.goo.version=1
