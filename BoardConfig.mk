@@ -104,4 +104,5 @@ TARGET_USE_CUSTOM_LUN_FILE_PATH := /sys/devices/platform/msm_otg/msm_hsusb/gadge
 
 #TESTING
 BOARD_HAVE_BLUETOOTH := true
-TARGET_CUSTOM_BLUEDROID := ../../../device/htc/ville/bluetooth/bluetooth.c
+#TARGET_CUSTOM_BLUEDROID := ../../../device/htc/ville/bluetooth/bluetooth.c
+BOARD_HAVE_BLUETOOTH_BCM := true
