@@ -66,18 +66,7 @@ BOARD_FLASH_BLOCK_SIZE := 262144
 
 # WiFi
 
-BOARD_WLAN_DEVICE := bcmdhd
-#BOARD_WLAN_DEVICE_REV := bcm4330_b1
-BOARD_WPA_SUPPLICANT_DRIVER := WEXT
-WPA_SUPPLICANT_VERSION := VER_0_8_X
-BOARD_WPA_SUPPLICANT_PRIVATE_LIB := lib_driver_cmd_bcmdhd
-WIFI_DRIVER_MODULE_PATH := "/lib/modules/bcmdhd.ko"
-WIFI_DRIVER_FW_PATH_AP := "/system/etc/firmware/fw_bcm4330_b1.bin"
-WIFI_DRIVER_FW_PATH_STA := "/system/etc/firmware/fw_bcm4330_apsta_b1.bin"
-WIFI_DRIVER_FW_PATH_P2P := "/system/etc/firmware/fw_bcm4330_p2p_b1.bin"
-WIFI_DRIVER_MODULE_ARG := "firmware_path=/system/etc/firmware/fw_bcm4330_b1.bin iface_name=wlan0"
-WIFI_BAND             := 802_11_ABG
-#$(call inherit-product-if-exists, hardware/broadcom/wlan/bcmdhd/firmware/bcm4330/device-bcm.mk)
+$(call inherit-product-if-exists, hardware/broadcom/wlan/bcmdhd/firmware/bcm4330/device-bcm.mk)
 
 TARGET_RELEASETOOLS_EXTENSIONS := device/htc/common
 
