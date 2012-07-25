@@ -101,3 +101,7 @@ BOARD_HAS_NO_MISC_PARTITION := false
 BOARD_VOLD_EMMC_SHARES_DEV_MAJOR := true
 
 TARGET_USE_CUSTOM_LUN_FILE_PATH := /sys/devices/platform/msm_otg/msm_hsusb/gadget/lun0/file
+
+#TESTING
+BOARD_HAVE_BLUETOOTH := true
+TARGET_CUSTOM_BLUEDROID := ../../../device/htc/ville/bluetooth/bluetooth.c
