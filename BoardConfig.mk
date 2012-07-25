@@ -71,15 +71,15 @@ BOARD_FLASH_BLOCK_SIZE := 262144
 
 # WiFi
 
-BOARD_WPA_SUPPLICANT_DRIVER      := WEXT
 WPA_SUPPLICANT_VERSION           := VER_0_8_X
 BOARD_WPA_SUPPLICANT_PRIVATE_LIB := lib_driver_cmd_bcmdhd
 BOARD_WLAN_DEVICE                := bcmdhd
+TARGET_CUSTOM_WIFI               := ../../device/htc/primoc/wifi/wifi.c
 WIFI_DRIVER_FW_PATH_PARAM        := "/sys/module/bcmdhd/parameters/firmware_path"
 WIFI_DRIVER_MODULE_PATH          := "/system/lib/modules/bcmdhd.ko"
-WIFI_DRIVER_FW_PATH_STA          := "/system/vendor/firmware/fw_bcmdhd_apsta.bin"
-WIFI_DRIVER_FW_PATH_AP           := "/system/vendor/firmware/fw_bcmdhd.bin"
-WIFI_DRIVER_FW_PATH_P2P          := "/system/vendor/firmware/fw_bcmdhd_p2p.bin"
+WIFI_DRIVER_FW_PATH_STA          := "sta"
+WIFI_DRIVER_FW_PATH_AP           := "ap"
+WIFI_DRIVER_FW_PATH_P2P          := "p2p"
 WIFI_DRIVER_MODULE_NAME          := "bcmdhd"
 WIFI_DRIVER_MODULE_ARG           := "firmware_path=/vendor/firmware/fw_bcmdhd.bin nvram_path=/proc/calibration iface_name=wlan0"
 BOARD_WLAN_DEVICE_REV            := bcm4330_b1
