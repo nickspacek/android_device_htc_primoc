@@ -105,4 +105,4 @@ BOARD_VOLD_EMMC_SHARES_DEV_MAJOR := true
 TARGET_USE_CUSTOM_LUN_FILE_PATH := /sys/devices/platform/msm_otg/msm_hsusb/gadget/lun0/file
 
 #TESTING
-TARGET_CUSTOM_BLUEDROID := ../../../device/htc/ville/bluetooth/bluetooth.c
+TARGET_CUSTOM_BLUEDROID := ../../../device/htc/primoc/bluetooth/bluetooth.c
