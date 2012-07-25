@@ -18,7 +18,7 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/languages_full.mk)
 
 # The gps config appropriate for this device
 
-PRODUCT_COPY_FILES += device/htc/primoc/etc/gps.conf:system/etc/gps.conf
+PRODUCT_COPY_FILES += device/htc/primoc/prebuilt/etc/gps.conf:system/etc/gps.conf
 
 ## (1) First, the most specific values, i.e. the aspects that are specific to GSM
 
@@ -85,11 +85,11 @@ PRODUCT_COPY_FILES += \
     device/htc/primoc/usr/keylayout/synaptics-rmi-touchscreen.kl:system/usr/keylayout/synaptics-rmi-touchscreen.kl
 
 PRODUCT_COPY_FILES += \
-    device/htc/primoc/etc/vold.fstab:system/etc/vold.fstab
+    device/htc/primoc/prebuilt/etc/vold.fstab:system/etc/vold.fstab
 
 # media config xml file
 PRODUCT_COPY_FILES += \
-    device/htc/primoc/etc/media_profiles.xml:system/etc/media_profiles.xml	
+    device/htc/primoc/prebuilt/etc/media_profiles.xml:system/etc/media_profiles.xml	
 
 # Kernel modules
 #PRODUCT_COPY_FILES += \
