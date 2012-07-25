@@ -87,7 +87,7 @@ TARGET_RELEASETOOLS_EXTENSIONS := device/htc/common
 
 TARGET_KERNEL_SOURCE := kernel/htc/msm7x30
 TARGET_KERNEL_CONFIG := cyanogen_primoc_defconfig
-TARGET_PREBUILT_KERNEL := device/htc/primoc/prebuilt/kernel
+TARGET_PREBUILT_KERNEL := device/htc/primoc/prebuilt/root/kernel
 TARGET_USES_OVERLAY := false
 
 BOARD_HAS_LARGE_FILESYSTEM := true
