@@ -54,10 +54,6 @@ PRODUCT_PACKAGES += \
     gps.primoc \
     lights.primoc \
     sensors.primoc
-	
-PRODUCT_PACKAGES += \
-    audio_policy.msm7x30 \
-    audio.primary.msm7x30
 
 # idc files
 PRODUCT_COPY_FILES += \
