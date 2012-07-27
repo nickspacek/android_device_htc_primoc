@@ -37,3 +37,17 @@ PRODUCT_DEVICE := primoc
 PRODUCT_BRAND := HTC
 PRODUCT_MODEL := One V
 
+# Carrier Info
+CDMA_GOOGLE_BASE := android-sprint-us
+CDMA_CARRIER_ALPHA := Virgin_Mobile
+CDMA_CARRIER_NUMERIC := 311490
+
+# Property Overides for carrier
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.com.google.clientidbase=$(CDMA_GOOGLE_BASE) \
+    ro.cdma.home.operator.alpha=$(CDMA_CARRIER_ALPHA) \
+    ro.cdma.home.operator.numeric=$(CDMA_CARRIER_NUMERIC) \
+    gsm.sim.operator.alpha=$(CDMA_CARRIER_ALPHA) \
+    gsm.sim.operator.numeric=$(CDMA_CARRIER_NUMERIC) \
+    gsm.operator.alpha=$(CDMA_CARRIER_ALPHA) \
+    gsm.operator.numeric=$(CDMA_CARRIER_NUMERIC)
