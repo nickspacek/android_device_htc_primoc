@@ -49,9 +49,6 @@ BOARD_VENDOR_QCOM_GPS_LOC_API_AMSS_VERSION := 50000
 BOARD_HAVE_HTC_FFC := true
 BOARD_USE_REVERSE_FFC := true
 
-# Workaround for primoc's broken overlay scaling
-#BOARD_OVERLAY_MINIFICATION_LIMIT := 2
-
 # Merged Generic Wifi Defines
 WIFI_BAND                        := 802_11_ABG
 WPA_SUPPLICANT_VERSION           := VER_0_8_X
