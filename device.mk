@@ -24,8 +24,8 @@ PRODUCT_COPY_FILES += device/htc/primoc/prebuilt/etc/gps.conf:system/etc/gps.con
 
 PRODUCT_COPY_FILES += \
     device/htc/primoc/prebuilt/root/init.primoc.rc:root/init.primoc.rc \
-	device/htc/primoc/prebuilt/root/init.usb.rc:root/init.usb.rc \
-	device/htc/primoc/prebuilt/root/init.rc:root/init.rc \
+    device/htc/primoc/prebuilt/root/init.usb.rc:root/init.usb.rc \
+    device/htc/primoc/prebuilt/root/init.rc:root/init.rc \
     device/htc/primoc/prebuilt/root/ueventd.primoc.rc:root/ueventd.primoc.rc
 
 PRODUCT_COPY_FILES += \
@@ -54,6 +54,11 @@ PRODUCT_PACKAGES += \
     gps.primoc \
     lights.primoc \
     sensors.primoc
+
+# Additional packages
+PRODUCT_PACKAGES += \
+    GooManager \
+    PopNetwork
 
 # idc files
 PRODUCT_COPY_FILES += \
@@ -111,10 +116,8 @@ $(call inherit-product, device/htc/primoc/media_htcaudio.mk)
 
 $(call inherit-product, frameworks/base/build/phone-hdpi-512-dalvik-heap.mk)
 
-##$(call inherit-product, hardware/broadcom/wlan/bcmdhd/firmware/bcm4330/device-bcm.mk)  remove for a bit
-
 # Goo updater app
 PRODUCT_PROPERTY_OVERRIDES += \
 ro.goo.developerid=jmz \
 ro.goo.rom=cm9primoc \
-ro.goo.version=1
+ro.goo.version=3
