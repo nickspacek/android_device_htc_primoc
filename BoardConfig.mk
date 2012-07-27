@@ -64,7 +64,7 @@ WIFI_DRIVER_FW_PATH_STA          := "/etc/firmware/fw_bcmdhd_b2.bin"
 WIFI_DRIVER_FW_PATH_AP           := "/etc/firmware/fw_bcmdhd_apsta_b2.bin"
 WIFI_DRIVER_FW_PATH_P2P          := "/etc/firmware/fw_bcmdhd_p2p_b2.bin"
 WIFI_DRIVER_FW_PATH_PARAM        := "/sys/module/bcmdhd/parameters/firmware_path"
-BOARD_WLAN_DEVICE_REV            := bcm4330_b1
+BOARD_WLAN_DEVICE_REV            := bcm4330_b2
 
 # cat /proc/emmc
 #dev:        size     erasesize name
