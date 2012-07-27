@@ -125,6 +125,9 @@ $(call inherit-product, build/target/product/full_base.mk)
 # common msm7x30 configs
 $(call inherit-product, device/htc/msm7x30-common/msm7x30.mk)
 
+# pull qcom vendor
+$(call inherit-product, vendor/qcom/proprietary/qcom-vendor.mk)
+
 # HTC Audio
 $(call inherit-product, device/htc/primoc/media_a1026.mk)
 $(call inherit-product, device/htc/primoc/media_htcaudio.mk)
