@@ -84,7 +84,6 @@ TARGET_RELEASETOOLS_EXTENSIONS := device/htc/common
 TARGET_KERNEL_SOURCE := kernel/htc/msm7x30
 TARGET_KERNEL_CONFIG := cyanogen_primoc_defconfig
 TARGET_PREBUILT_KERNEL := device/htc/primoc/prebuilt/root/kernel
-TARGET_USES_OVERLAY := false
 
 BOARD_HAS_LARGE_FILESYSTEM := true
 BOARD_HAS_NO_SELECT_BUTTON := true
@@ -102,3 +101,6 @@ TARGET_USE_CUSTOM_LUN_FILE_PATH := /sys/devices/platform/msm_otg/msm_hsusb/gadge
 ENABLE_WEBGL := true
 TARGET_FORCE_CPU_UPLOAD := true
 DYNAMIC_SHARED_LIBV8SO := true
+
+# Testing
+#TARGET_USES_OVERLAY := false
