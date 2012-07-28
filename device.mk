@@ -26,6 +26,7 @@ PRODUCT_COPY_FILES += \
     device/htc/primoc/prebuilt/root/init.primoc.rc:root/init.primoc.rc \
     device/htc/primoc/prebuilt/root/init.usb.rc:root/init.usb.rc \
     device/htc/primoc/prebuilt/root/init.rc:root/init.rc \
+    device/htc/primoc/prebuilt/root/ueventd.rc:root/ueventd.rc \
     device/htc/primoc/prebuilt/root/ueventd.primoc.rc:root/ueventd.primoc.rc
 
 PRODUCT_COPY_FILES += \
