@@ -125,7 +125,7 @@ PRODUCT_PACKAGES := \
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 
 # Set those variables here to overwrite the inherited values.
-PRODUCT_NAME := full_primoc
+PRODUCT_NAME := htc_primoc
 PRODUCT_DEVICE := primoc
 PRODUCT_BRAND := HTC
 PRODUCT_MODEL := One V
@@ -146,5 +146,3 @@ $(call inherit-product, device/htc/primoc/media_a1026.mk)
 $(call inherit-product, device/htc/primoc/media_htcaudio.mk)
 
 $(call inherit-product, frameworks/base/build/phone-hdpi-512-dalvik-heap.mk)
-
-PRODUCT_NAME := primoc
