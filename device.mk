@@ -15,6 +15,7 @@
 #
 
 $(call inherit-product, $(SRC_TARGET_DIR)/product/languages_full.mk)
+$(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 
 # The gps config appropriate for this device
 
@@ -116,11 +117,23 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
     device/htc/primoc/prebuilt/modules/bcmdhd.ko:system/lib/modules/bcmdhd.ko
 
+# Camera
+PRODUCT_PACKAGES := \
+    Camera
+
+# Inherit from those products. Most specific first.
+$(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
+
+# Set those variables here to overwrite the inherited values.
+PRODUCT_NAME := full_primoc
+PRODUCT_DEVICE := primoc
+PRODUCT_BRAND := HTC
+PRODUCT_MODEL := One V
 
 # stuff common to all HTC phones
 #$(call inherit-product, device/htc/common/common.mk)
 
-$(call inherit-product, build/target/product/full_base.mk)
+#$(call inherit-product, build/target/product/full_base.mk)
 
 # common msm7x30 configs
 $(call inherit-product, device/htc/msm7x30-common/msm7x30.mk)
@@ -133,9 +146,3 @@ $(call inherit-product, device/htc/primoc/media_a1026.mk)
 $(call inherit-product, device/htc/primoc/media_htcaudio.mk)
 
 $(call inherit-product, frameworks/base/build/phone-hdpi-512-dalvik-heap.mk)
-
-# Goo updater app
-PRODUCT_PROPERTY_OVERRIDES += \
-ro.goo.developerid=jmz \
-ro.goo.rom=cm9primoc \
-ro.goo.version=3

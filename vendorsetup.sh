@@ -20,5 +20,5 @@
 # In particular, you can add lunch options with the add_lunch_combo
 # function: add_lunch_combo generic-eng
 
-add_lunch_combo cm_primoc-userdebug
-add_lunch_combo cm_primoc-eng
+add_lunch_combo htc_primoc-userdebug
+add_lunch_combo htc_primoc-eng
