@@ -14,8 +14,11 @@
 # limitations under the License.
 #
 
-$(call inherit-product, $(SRC_TARGET_DIR)/product/languages_full.mk)
-$(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
+$(call inherit-product, build/target/product/full_base.mk)
+$(call inherit-product, build/target/product/languages_full.mk)
+
+$(call inherit-product, device/common/gps/gps_eu_supl.mk)
+
 
 # The gps config appropriate for this device
 
@@ -71,11 +74,6 @@ PRODUCT_PACKAGES += \
     lights.primoc \
     sensors.primoc
 
-# Additional packages
-PRODUCT_PACKAGES += \
-    GooManager \
-    PopNetwork
-
 # idc files
 PRODUCT_COPY_FILES += \
     device/htc/primoc/prebuilt/usr/idc/atmel-touchscreen.idc:system/usr/idc/atmel-touchscreen.idc \
@@ -100,10 +98,7 @@ PRODUCT_COPY_FILES += \
 
 # media config xml file
 PRODUCT_COPY_FILES += \
-    device/htc/primoc/prebuilt/etc/media_profiles.xml:system/etc/media_profiles.xml	
-
-# Kernel modules
-#PRODUCT_COPY_FILES += \
+    device/htc/primoc/prebuilt/etc/media_profiles.xml:system/etc/media_profiles.xml
 
 ifeq ($(TARGET_PREBUILT_KERNEL),)
 LOCAL_KERNEL := device/htc/primoc/prebuilt/root/kernel
@@ -116,24 +111,6 @@ PRODUCT_COPY_FILES += \
 
 PRODUCT_COPY_FILES += \
     device/htc/primoc/prebuilt/modules/bcmdhd.ko:system/lib/modules/bcmdhd.ko
-
-# Camera
-PRODUCT_PACKAGES := \
-    Camera
-
-# Inherit from those products. Most specific first.
-$(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
-
-# Set those variables here to overwrite the inherited values.
-PRODUCT_NAME := htc_primoc
-PRODUCT_DEVICE := primoc
-PRODUCT_BRAND := HTC
-PRODUCT_MODEL := One V
-
-# stuff common to all HTC phones
-#$(call inherit-product, device/htc/common/common.mk)
-
-#$(call inherit-product, build/target/product/full_base.mk)
 
 # common msm7x30 configs
 $(call inherit-product, device/htc/msm7x30-common/msm7x30.mk)
