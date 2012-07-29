@@ -11,15 +11,7 @@ $(call inherit-product, vendor/aokp/configs/common_phone.mk)
 $(call inherit-product, vendor/aokp/configs/gsm.mk)
 
 # Inherit device configuration
-$(call inherit-product, device/htc/marvel/aokp_primoc.mk)
-
-## Device identifier. This must come after all inclusions
-PRODUCT_DEVICE := primoc
-PRODUCT_NAME   := aokp_primoc
-PRODUCT_BRAND  := htc
-PRODUCT_MODEL  := One V
-PRODUCT_MANUFACTURER := HTC
-PRODUCT_VERSION_DEVICE_SPECIFIC := -AOKP-NIGHTLY-$(NOW)
+#$(call inherit-product, device/htc/marvel/aokp_primoc.mk)
 
 # AOKP_RELEASE := true
 AOKP_BUILDTYPE := UNOFFICIAL

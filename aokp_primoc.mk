@@ -18,7 +18,7 @@ $(call inherit-product, build/target/product/full_base.mk)
 $(call inherit-product, build/target/product/languages_full.mk)
 
 $(call inherit-product, device/common/gps/gps_eu_supl.mk)
-
+$(call inherit-product, device/htc/primoc/aokp.mk)
 
 # The gps config appropriate for this device
 
@@ -123,3 +123,10 @@ $(call inherit-product, device/htc/primoc/media_a1026.mk)
 $(call inherit-product, device/htc/primoc/media_htcaudio.mk)
 
 $(call inherit-product, frameworks/base/build/phone-hdpi-512-dalvik-heap.mk)
+
+PRODUCT_DEVICE := primoc
+PRODUCT_NAME := aokp_primoc
+PRODUCT_BRAND := htc
+PRODUCT_MODEL := One V
+PRODUCT_MANUFACTURER := HTC
+PRODUCT_VERSION_DEVICE_SPECIFIC := -AOKP-NIGHTLY-$(NOW)
