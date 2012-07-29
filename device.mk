@@ -146,3 +146,5 @@ $(call inherit-product, device/htc/primoc/media_a1026.mk)
 $(call inherit-product, device/htc/primoc/media_htcaudio.mk)
 
 $(call inherit-product, frameworks/base/build/phone-hdpi-512-dalvik-heap.mk)
+
+PRODUCT_NAME := primoc
